@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+    <title>ladrão</title>
+</head>
+<body>
+    <main>
+        <div class="passo" id="passo-0">
+            <p>É 1:54 AM. Você está tentando dormir mas não consegue. Sente que algo está de errado.</p>
+            <p>Isso é até voce escutar algo vindo do andar debaixo. Agora você <b>sabe</b> que algo está de errado</p>
+            <button class="btn-proximo" data-proximo="1">Investigar</button>
+            <button class="btn-proximo" data-proximo="?">Se Esconder</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você escolhe ir investigar o barulho. Você levanta da cama, e vai em direção a porta</p>
+            <button class="btn-proximo" data-proximo="2">Ir com lanterna</button>
+            <button class="btn-proximo" data-proximo="?">Ir sem lanterna</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você decide sair do quarto com uma lanterna para conseguir ver melhor</p>
+            <p>Você decide verificar o banheiro primeiro</p>
+            <button class="btn-proximo" data-proximo="2">Ir com lanterna</button>
+            <button class="btn-proximo" data-proximo="?">Ir sem lanterna</button>
+        </div>
+    </main>    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
