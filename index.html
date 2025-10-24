@@ -11,10 +11,11 @@
 </head>
 <body>
     <main>
-        <div class="passo" id="passo-0">
+        <div class="passo ativo" id="passo-0">
+            <p style="opacity: 0.4; line-height:0">Eu escolhi não ter imagem. eu acho que ficou melhor assim</p>
             <p>É 1:54 AM. Você está tentando dormir mas não consegue. Sente que algo está de errado.</p>
             <p>Isso é até voce escutar algo vindo do andar debaixo. Agora você <b>sabe</b> que algo está de errado</p>
-            <button class="btn-proximo" data-proximo="1">Investigar</button>
+            <button class="btn-proximo" data-proximo="1">Investigar</button>    
             <button class="btn-proximo" data-proximo="?">Se Esconder</button>
         </div>
         <div class="passo" id="passo-1">
@@ -25,12 +26,33 @@
         <div class="passo" id="passo-2">
             <p>Você decide sair do quarto com uma lanterna para conseguir ver melhor</p>
             <p>Você decide verificar o banheiro primeiro</p>
-            <button class="btn-proximo" data-proximo="2">Ir com lanterna</button>
-            <button class="btn-proximo" data-proximo="?">Ir sem lanterna</button>
+            <button class="btn-proximo" data-proximo="3">Continuar</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Não tinha ninguem lá</p>
+            <p>Você decide ver se tem algo no outro quarto</p>
+            <button class="btn-proximo" data-proximo="4">Continuar</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Não tinha ninguem lá também.</p>
+            <p>Ele não está no segundo andar</p>
+            <p>Você então decide descer as escadas</p>
+            <button class="btn-proximo" data-proximo="5">Continuar</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Enquanto desce as escadas bem devagar, você escuta uma panela caindo do escorredor</p>
+            <p>E então, depois de alguns passos, você vê o ladrão saindo da cozinha. Ele está olhando diretamente para você</p>
+            <button class="btn-proximo" data-proximo="6">Atacar ele</button>
+            <button class="btn-proximo" data-proximo="?">Correr dele</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Você decide, por algum motivo, ir atacar ele</p>
+            <p>Logo depois de acertar um soco nele, você sente uma faca na suas costelas</p>
+            <p>Quando você olha pra baixo, ele já tinha tirado a faca.</p>
+            <p style="color: red;">Seu sangue começa a cair no chão, formando ua poça vermelha</p>
+            <p>Você desacorda</p>
         </div>
     </main>    
     <script src="script.js"></script>
 </body>
 </html>
-
-
