@@ -1,5 +1,4 @@
 startTime = Date.now();
-const vh = window.innerHeight;
 
 
 
@@ -28,9 +27,10 @@ avanca.forEach(button => {
 
 
 function updateBodyHeight() {
+    const vh = window.innerHeight;
     const currentTime = Date.now();
     const elapsedTime = currentTime - startTime;
-    const sinusoid = Math.sin(elapsedTime / 2000) * 20 + (vh+40);
+    const sinusoid = Math.sin(elapsedTime / 2000) * 20 + (vh);
     document.body.style.height = sinusoid + 'px';
 }
 
@@ -51,7 +51,7 @@ function createRain() {
         raindrop.classList.add('raindrop');
         raindrop.style.left = Math.random() * 100 + 'vw';
         raindrop.style.animationDelay = Math.random() * 2 + 's';
-        raindrop.style.animationDuration = (Math.random() * 1 + 1.5) + 's';
+        raindrop.style.animationDuration = (Math.random() * 2 + 2) + 's';
         rainContainer.appendChild(raindrop);
     }
 }
