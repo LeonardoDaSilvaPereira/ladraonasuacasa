@@ -42,20 +42,20 @@ function animate() {
 animate();
 
 function createRain() {
-    const rainContainer = document.createElement('div');
-    rainContainer.classList.add('rain-container');
-    document.body.appendChild(rainContainer);
-
-    for (let i = 0; i < 200; i++) {
+    // Create raindrops directly on body, not in a container
+    for (let i = 0; i < 500; i++) {
         const raindrop = document.createElement('div');
         raindrop.classList.add('raindrop');
         raindrop.style.left = Math.random() * 100 + 'vw';
+        raindrop.style.position = 'fixed';
         raindrop.style.animationDelay = Math.random() * 2 + 's';
-        raindrop.style.animationDuration = (Math.random() * 2 + 2) + 's';
-        rainContainer.appendChild(raindrop);
+        raindrop.style.animationDuration = (Math.random() + 1) + 's';
+        
+        // This will actually work now
+        raindrop.style.zIndex = Math.round(Math.random() * 3 - 1);
+        
+        document.body.appendChild(raindrop);
     }
 }
 
 createRain();
-
-
